@@ -4,10 +4,9 @@
     <a href="" class="header-logo">Cargofive</a>
     <div :class="menu" @click="activeMenu"></div>
     <nav :class="navbar">
-          <router-link class="header-link" to="/">Home</router-link>
-          <router-link class="header-link" to="/">LinkedIn</router-link>
-          <router-link class="header-link" to="/">Portafolio</router-link>
-          <router-link class="header-link" to="/">Github</router-link>
+          <router-link class="header-link" to="https://portafolio-nodejs.herokuapp.com/">Portafolio</router-link>
+          <router-link class="header-link" to="https://github.com/GabrielSzyslak1114">Github</router-link>
+          <router-link class="header-link" to="https://www.linkedin.com/in/gabriel-rodríguez-ruíz-b04882209">LinkedIn</router-link>
     </nav>
   </header>
 </template>
