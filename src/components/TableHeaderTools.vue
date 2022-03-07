@@ -44,9 +44,9 @@
 
         <div class="search">
             <input v-model="textClient" @keyup="$emit('searchData', textClient)" @keyup.enter="$emit('searchData', textClient)" type="text" name="" id="" class="search-input" placeholder="Ingresa un nombre...">
-            <a class="search-icon" @click="$emit('searchData', textClient)">
+            <button class="search-icon" @click="$emit('searchData', textClient)">
                 <img src="../assets/search.png" alt="">
-            </a>
+            </button>
         </div>
         
       </div>
@@ -124,6 +124,8 @@
             right: -7px;
             transition: .4s;
             cursor: pointer;
+            border: none;
+            background: none;
 
             &:hover{
                 transform: scale(.9)
