@@ -211,5 +211,8 @@ position: absolute;
     &:hover{
       transform: scale(.9)
     }
+    @media (max-width: 768px) {
+      bottom: 35px;
+    }
 }
 </style>

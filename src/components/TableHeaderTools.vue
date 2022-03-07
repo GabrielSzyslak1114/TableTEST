@@ -43,7 +43,10 @@
         </div>
 
         <div class="search">
-            <input v-model="textClient" @keyup="$emit('searchData', textClient)" @keyup.enter="('searchData', textClient)" type="text" name="" id="" class="search-input" placeholder="Ingresa un nombre...">
+            <input v-model="textClient" @keyup="$emit('searchData', textClient)" @keyup.enter="$emit('searchData', textClient)" type="text" name="" id="" class="search-input" placeholder="Ingresa un nombre...">
+            <div class="search-icon" @click="$emit('searchData', textClient)">
+                <img src="../assets/search.png" alt="">
+            </div>
         </div>
         
       </div>
@@ -68,7 +71,10 @@
 
         .search{
             width: 30%;
-
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
             @media(max-width: 768px) {
             width: 50%;
         }
@@ -103,5 +109,30 @@
         }
     }
     
+    }
+
+    .search-icon{
+        display: none;
+        @media (max-width: 768px) {
+            display: flex;
+            jutify-content: center;
+            align-items: center;
+            padding: 1px;
+            height: 42px;
+            width: 42px;
+            position: absolute;
+            right: -7px;
+            transition: .4s;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(.9)
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 </style>
