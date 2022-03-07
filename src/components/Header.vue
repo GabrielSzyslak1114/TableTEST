@@ -212,7 +212,7 @@ position: absolute;
       transform: scale(.9)
     }
     @media (max-width: 768px) {
-      bottom: 35px;
+      bottom: 50px;
     }
 }
 </style>
