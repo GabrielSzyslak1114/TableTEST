@@ -43,7 +43,7 @@
         </div>
 
         <div class="search">
-            <input v-model="textClient" @keyup="$emit('searchData', textClient)" type="text" name="" id="" class="search-input" placeholder="Ingresa un nombre...">
+            <input v-model="textClient" @keyup="$emit('searchData', textClient)" @keyup.enter="('searchData', textClient)" type="text" name="" id="" class="search-input" placeholder="Ingresa un nombre...">
         </div>
         
       </div>

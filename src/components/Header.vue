@@ -8,6 +8,9 @@
           <a class="header-link" target="_blank" href="https://github.com/GabrielSzyslak1114">Github</a>
           <a class="header-link" target="_blank" href="https://www.linkedin.com/in/gabriel-rodríguez-ruíz-b04882209">LinkedIn</a>
     </nav>
+    <a class="down" href="/#table-results">
+      <img src="../assets/down.png"/>
+    </a>
   </header>
 </template>
 
@@ -185,5 +188,28 @@ import { computed } from "@vue/runtime-core";
 
    }
 
+   .down{
+     transition: .2s ease-in-out;
+     opacity: 0.4;
+     transform: translateX(300px);
+  
+   }
+
+}
+
+.down{
+position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    bottom: 10px;
+    margin: 20px;
+    cursor: pointer;
+    &:hover{
+      transform: scale(.9)
+    }
 }
 </style>

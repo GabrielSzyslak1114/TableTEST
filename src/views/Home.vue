@@ -1,8 +1,8 @@
 <template>
 
- <section class="table-layout">
+ <section class="table-layout" id="table-results">
    <main class="datatable-container">
-      <TableHeaderTools @getDataFilter="getDataFilter" @searchData="searchData"/>
+      <TableHeaderTools  @getDataFilter="getDataFilter" @searchData="searchData"/>
       <TableFooterTools @getPorts="getPorts" />
       <TableData/>
     </main>
@@ -111,6 +111,10 @@ provide('portsData', portsData);
     margin: 60vh auto;
     padding: 20px;
      z-index: 1;
+
+     @media (max-width: 768px){
+       padding: 10px;
+     }
     &:before{
       content: '';
       position: absolute;
@@ -155,7 +159,7 @@ provide('portsData', portsData);
     backdrop-filter: blur(10px);
 
        @media (max-width: 768px) {
-            width: 98%;  
+            width: 100%;  
     }
 
 }
