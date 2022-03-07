@@ -1,5 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import store from './store'
+import router from './router'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 
-createApp(App).use(store).mount('#app')
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+createApp(App).use(VueAxios, axios).use(router).mount('#app')
