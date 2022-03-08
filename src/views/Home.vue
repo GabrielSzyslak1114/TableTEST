@@ -43,7 +43,7 @@ provide('portsData', portsData);
    */
 
   const getPorts = async(index) =>{
-    const {data, meta, links} = await getData(index);
+    const {data, meta} = await getData(index);
     portsData.data = data;
     portsData.meta = meta;
     getDataFilter('')
@@ -114,6 +114,10 @@ provide('portsData', portsData);
 
      @media (max-width: 768px){
        padding: 10px;
+     }
+
+     @media(max-width: 435px){
+       padding: 2px;
      }
     &:before{
       content: '';

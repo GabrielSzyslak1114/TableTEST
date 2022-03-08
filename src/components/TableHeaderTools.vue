@@ -128,7 +128,7 @@
             background: none;
 
             &:hover{
-                transform: scale(.9)
+                transform: scale(.90)
             }
 
             img{

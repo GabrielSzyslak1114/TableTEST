@@ -52,11 +52,18 @@ const portsData = inject("portsData");
         cursor: pointer;
     }
     
+
     th,
     td {
         padding: 12px;
         text-align: left;
         border-bottom: 1px solid #dddddd30;
+            @media(max-width: 445px){
+       padding: 6px !important;
+     }
+        @media(max-width: 435px){
+       padding: 3px !important;
+     }
     }
     
     
