@@ -66,15 +66,15 @@ provide('portsData', portsData);
   
   /**
    * Funcion que busca un elemento de la tabla por nombre
-   * @param {String} text 
+   * @param {String} textClient
    */
-  const searchData = (text)=>{
+  const searchData = (textClient)=>{
     //texto del cliente convertido a minuscula
-    const textClient = text.toLowerCase();
+    const text = textClient.toLowerCase();
     portsData.dataFiltered = portsData.data.filter(dato =>{
       //texto de api convertido en minuscula
       const datoPorts = dato.name.toLowerCase();
-      if(datoPorts.includes(textClient)) {
+      if(datoPorts.includes(text)) {
         return dato
       }
     })
