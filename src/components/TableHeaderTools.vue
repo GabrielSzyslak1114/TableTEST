@@ -56,7 +56,7 @@
     import {inject, ref} from 'vue'
     const portsData = inject('portsData');
 
-    const textClient = '';
+    const textClient = ref('');
 
 </script>
 
